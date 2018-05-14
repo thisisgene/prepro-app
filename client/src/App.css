@@ -1,0 +1,123 @@
+nav {
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+}
+nav .menu-list {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  /*position: relative;*/
+}
+nav .menu-list .auth-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+nav .menu-list .auth-nav li {
+  margin: 0 .5rem;
+}
+
+nav .logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+nav .logo-container img {
+  width: 32px;
+  height: 32px;
+}
+nav .nav-title {
+  margin: 0 0 0 3px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+a {
+  font-weight: lighter;
+  text-decoration: none;
+  color: #727272;
+}
+a:hover {
+  color: #212121;
+}
+a.active {
+  color: #aaa;
+}
+
+.logged-in-user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  background: transparent;
+}
+.logged-in-user:hover {
+}
+.logged-in-user:hover > .auth-nav{
+  display: flex !important;
+
+}
+.logged-in-user img {
+  width: 32px;
+  height: 32px;
+  margin-bottom: .3rem;
+}
+.logged-in-user .auth-nav {
+  display: none !important;
+  flex-direction: column !important;
+  align-items: flex-end;
+  padding: 1rem;
+  margin-top: .3rem;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+}
+
+
+.input-form {
+  width: 20rem;
+  margin: 2rem auto;
+  padding: 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .3);
+  background: #fff;
+  font-family: 'Dosis', sans-serif;
+}
+
+.form-element {
+  display: flex;
+  flex-direction: column;
+  margin: .3rem 0;
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.2rem;
+}
+.form-element input {
+  height: 2.5rem;
+  padding: .2rem .4rem;
+  width: 100%;
+  font-size: 1rem;
+  /*background: #f6f6f6;*/
+  box-shadow: 0 0 0 transparent;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  margin: 0 0 .3rem 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+}
+.submit-button {
+  padding: .6rem;
+  width: 100%;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  border: none;
+  background: #00B7FF;
+  color: #fff;
+}
